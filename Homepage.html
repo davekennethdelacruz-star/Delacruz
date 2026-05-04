@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About Me</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#02204a,#6f4c83);
+color:white;
+}
+
+/* NAVBAR */
+header{
+display:flex;
+justify-content:space-between;
+padding:25px 80px;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:30px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+}
+
+nav ul li a:hover{
+color:#ffd700;
+}
+
+/* ABOUT SECTION */
+.about{
+text-align:center;
+padding:60px 20px;
+}
+
+.title{
+font-size:50px;
+margin-bottom:20px;
+}
+
+/* PROFILE IMAGE */
+.profile-img{
+width:180px;
+height:180px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid #ffd700;
+margin:20px 0;
+}
+
+/* NAME */
+.name{
+font-size:28px;
+font-weight:600;
+}
+
+.role{
+color:#ffd700;
+margin-bottom:20px;
+}
+
+/* BUTTON */
+.resume-btn{
+display:inline-block;
+padding:12px 30px;
+border:2px solid #ffd700;
+color:#ffd700;
+text-decoration:none;
+margin-bottom:40px;
+transition:0.3s;
+}
+
+.resume-btn:hover{
+background:#ffd700;
+color:black;
+}
+
+/* BOXES */
+.about-container{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:30px;
+max-width:900px;
+margin:auto;
+}
+
+.box{
+background:rgba(255,255,255,0.08);
+padding:30px;
+border-radius:15px;
+transition:0.3s;
+}
+
+.box:hover{
+transform:translateY(-10px);
+background:rgba(255,255,255,0.15);
+}
+
+.box h2{
+color:#ffd700;
+margin-bottom:15px;
+font-size:24px;
+}
+
+.box p{
+font-size:17px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+.about-container{
+grid-template-columns:1fr;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h2>BOSS🦝</h2>
+
+<nav>
+<ul>
+<li><a href="Homepage.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="about">
+
+<h1 class="title">Homepage</h1>
+
+<img src="hero.png" class="profile-img">
+
+<h2 class="name">Kenneth Dave Delacruz</h2>
+<p class="role">BSIT Student</p>
+
+<a href="#" class="resume-btn">My Resume</a>
+
+<div class="about-container">
+
+<div class="box">
+<h2>Profile</h2>
+<p>Name: Kenneth Dave Delacruz</p>
+<p>Age: 19</p>
+<p>Course: BSIT 2nd Year</p>
+</div>
+
+<div class="box">
+<h2>Education</h2>
+<p>Senior High - ICT</p>
+<p>College - BSIT</p>
+<p></p>
+</div>
+
+<div class="box">
+<h2>Skills</h2>
+<p>HTML</p>
+<p>CSS</p>
+<p>Computer Troubleshooting</p>
+<p>Basic Programming</p>
+</div>
+
+<div class="box">
+<h2>Goal</h2>
+<p>To become a successful IT Professional and work in aviation using IT.</p>
+</div>
+
+</div>
+
+</section>
+
+</body>
